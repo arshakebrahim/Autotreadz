@@ -36,22 +36,47 @@ p{
 }
 
 
-    .hero {
-      background: url('images/tyre2.jpeg');
-      height: auto;
-      position: relative;
-      color: #fff;
-    }
+   .hero {
+  background: url('images/tyre2.jpeg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
 
-    .overlay {
-      background: rgba(0, 0, 0, 0.6);
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-    }
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .overlay h2 {
+    font-size: 1rem;
+  }
+
+  .overlay p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 200px;
+    padding: 0.6rem 0.9rem;
+  }
+}
 
     .overlay h1 {
       font-size: 50px;
