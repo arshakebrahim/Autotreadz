@@ -66,13 +66,20 @@
       opacity: 0;
       animation: fadeInUp 1s ease forwards;
     }
+.overlay h1 {
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.3);
+  animation-delay: 0.3s;
+}
+.highlight {
+  border-bottom: 4px solid #ffffff;
+  padding-bottom: 5px;
+}
 
-    .overlay h1 {
-      font-size: 50px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      animation-delay: 0.3s;
-    }
 
     .overlay h2 {
       margin: 1rem 0 0.5rem;
@@ -270,8 +277,35 @@
     }
 
     .social-icons a:hover {
-      color: #000000;
-    }
+  color: inherit;
+}
+
+.social-icons a.facebook:hover {
+  color: #1877f2; /* Facebook Blue */
+}
+
+.social-icons a.instagram:hover {
+  color: #e4405f; /* Instagram Red/Pink */
+}
+
+.social-icons a.whatsapp:hover {
+  color: #25D366; /* WhatsApp Green */
+}
+
+    .phone-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.phone-link:hover {
+  color: #007BFF;
+  transform: scale(1.05);
+}
+
 
     footer {
       background-color: #111;
@@ -349,7 +383,7 @@
 
   <header class="hero">
     <div class="overlay">
-      <h1>AUTOTREADZ</h1>
+      <h1><span class="highlight">AUTOTREADZ</span></h1>
       <h2>QUALITY USED TYRES FOR ALL VEHICLES</h2>
       <p>Find affordable, reliable used tyres for every model and type.</p>
       <a href="#shop" class="btn">SHOP NOW FOR TYRES</a>
@@ -389,13 +423,16 @@
     <h2>CONTACT US</h2>
     <p>Looking for something special?<br>
     Tell us what you're looking for, and we'll get back to you soon with a quote for price and availability.</p>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/Autotread1" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/autotreadz?utm_source=qr&igsh=MTlsc2E2YjhxZmN4ZQ==" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/+918606746435" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
+   <div class="social-icons">
+  <a href="https://www.facebook.com/Autotread1" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/autotreadz?utm_source=qr&igsh=MTlsc2E2YjhxZmN4ZQ==" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/+918606746435" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+</div>
+
     <p><strong>Autotreadz</strong><br>
-    Pathalam, Eloor, Ernakulam, Kerala, India</p>
+    Pathalam, Eloor, Ernakulam, Kerala, India<br>
+<a href="tel:+918606746435" class="phone-link">+91 86067 46435</a>
+  </p>
     <iframe src="https://maps.google.com/maps?q=Eloor,%20Ernakulam&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
   </section>
 
